@@ -14,7 +14,7 @@ const UserPage = async ({ params }: { params: Promise<{ id: string }> }) => {
         return notFound()
     }
     return (
-        <div>UserPage</div>
+        <></>
     )
 }
 
