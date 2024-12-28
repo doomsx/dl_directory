@@ -8,7 +8,7 @@ async function Navbar() {
     return (
         <header className='px-5 py-3 bg-white shadow-sm font-work-sans'>
             <nav className='flex justify-between items-center'>
-                <Link href="/">Logo</Link>
+                <Link href="/" className='text-2xl font-bold'>DL Directory</Link>
                 {/* <Image src='/logo.png' alt='' width={144} height={30} /> */}
 
                 <div className='flex items-center gap-5'>
