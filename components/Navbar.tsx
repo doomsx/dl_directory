@@ -1,6 +1,7 @@
 import { auth, signOut, signIn } from '@/auth'
 import Link from 'next/link'
 import React from 'react'
+import { Button } from './ui/button'
 
 async function Navbar() {
     const session = await auth()
@@ -28,7 +29,7 @@ async function Navbar() {
 
                                 await signOut({ redirectTo: "/" });
                             }}>
-                                <button type="submit">Logout</button>
+                                <Button type="submit">Logout</Button>
                             </form>
 
                             <Link href={`user/${session?.id}`}>
@@ -40,7 +41,7 @@ async function Navbar() {
                             "use server"
                             await signIn('github')
                         }}>
-                            <button>Login</button>
+                            <Button>Login</Button>
                         </form>
                     )}
                 </div>
