@@ -1,6 +1,5 @@
 import { formatDate } from '@/lib/utils'
 import { EyeIcon } from 'lucide-react'
-import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { Button } from './ui/button'
@@ -32,7 +31,7 @@ const StartupCard = ({ post }: { post: StartupTypeCard }) => {
                     </Link>
                 </div>
                 <Link href={`/user/${post.author?._id}`}>
-                    <Image src="https://placehold.co/48x48" alt='placeholder' width={48} height={48} className='rounded-full' />
+                    <img src={`${post.image}`} alt='placeholder' className='w-12 h-12 rounded-full' />
                 </Link>
             </div>
 
