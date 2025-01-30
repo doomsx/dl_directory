@@ -16,7 +16,6 @@ export const createPitch = async (state: any, form: FormData, pitch: string) => 
         Array.from(form).filter(([key]) => key !== 'pitch')
     )
 
-
     const slug = slugify(title as string, { lower: true, strict: true })
 
     try {
